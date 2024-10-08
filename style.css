@@ -1,0 +1,94 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Mise en page de base */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    width: 100%;
+}
+
+/* Barre latérale */
+.sidebar {
+    background-color: #333;
+    color: white;
+    width: 20%;
+    padding: 20px;
+    min-height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Contenu principal */
+.content {
+    margin-left: 20%;
+    padding: 40px;
+    background-color: #fff;
+    width: 80%;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 150px;
+}
+
+.info h2 {
+    font-size: 1.8em;
+    color: #666;
+    margin-top: 20px;
+}
+
+.info p {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
