@@ -1,77 +1,99 @@
+/* Style global */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    font-size: 18px; /* Taille de police de base augmentée */
-    line-height: 1.8; /* Meilleur espacement entre les lignes */
+    display: flex;
+    min-height: 100vh;
 }
 
-header {
-    background-color: #f4f4f4;
+/* Menu latéral */
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
     padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+}
+
+.sidebar h2 {
+    color: white;
     text-align: center;
-    border-bottom: 1px solid #ddd;
+    margin-bottom: 30px;
 }
 
-nav ul li a {
-    text-decoration: none;
-    font-weight: bold;
-    color: #4a4a8e;
-    padding: 12px 20px; /* Augmentation de l'espacement autour des liens */
-    font-size: 1.1rem; /* Augmentation de la taille des liens */
-}
-
-h1 {
-    font-size: 3rem; /* Agrandissement du titre principal */
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
     margin: 0;
-    color: #4a4a8e;
 }
 
-.intro-section h2 {
-    font-size: 2.2rem; /* Taille plus grande pour le titre de la section */
+.sidebar nav ul li {
+    margin-bottom: 20px;
+}
+
+.sidebar nav ul li a {
+    color: #3498db;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.sidebar nav ul li a:hover {
+    color: white;
+}
+
+/* Contenu principal */
+.main-content {
+    margin-left: 250px;
+    padding: 40px;
+    flex: 1;
+}
+
+/* Style pour l'introduction */
+.intro-section h1 {
+    font-size: 2.5rem;
     color: #004080;
+    margin-bottom: 30px;
 }
 
-.intro-section p {
-    font-size: 1.5rem; /* Taille plus grande pour la description */
-    color: #666;
+/* Disposition de l'image et du texte */
+.content-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style pour la photo de profil */
+.profile-photo img {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%; /* Forme circulaire */
+    object-fit: cover;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-right: 50px;
+}
+
+/* Informations sur le profil */
+.profile-info {
+    max-width: 500px;
 }
 
 .profile-info h3 {
-    font-size: 1.8rem; /* Taille plus grande pour les sous-titres */
-    color: #4a4a8e;
+    font-size: 1.8rem;
+    color: #004080;
 }
 
 .profile-info p {
-    font-size: 1.3rem; /* Taille plus grande pour le texte descriptif */
-    line-height: 1.8; /* Espacement amélioré entre les lignes */
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 a {
-    color: #4a4a8e;
+    color: #3498db;
     text-decoration: none;
-    font-size: 1.2rem; /* Taille plus grande pour les liens */
 }
 
 a:hover {
     text-decoration: underline;
-}
-
-/* Style pour l'image de profil ovale */
-.profile-photo img {
-    width: 250px;       /* Largeur de l'image */
-    height: 350px;      /* Hauteur de l'image pour un effet ovale */
-    border-radius: 50%; /* Cela permet de créer l'effet arrondi */
-    object-fit: cover;  /* Garde l'image bien ajustée dans le conteneur */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour un meilleur effet visuel */
-}
-
-/* Adaptation mobile */
-@media (max-width: 768px) {
-    .profile-container {
-        flex-direction: column;
-        text-align: center;
-    }
 }
