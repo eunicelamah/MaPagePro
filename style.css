@@ -1,3 +1,4 @@
+
 /* Style global */
 body {
     font-family: 'Roboto', sans-serif;
@@ -5,22 +6,25 @@ body {
     padding: 0;
     display: flex;
     min-height: 100vh;
+    background-color: #f9f9f9; /* Couleur de fond pour un look plus propre */
 }
 
 /* Menu latéral */
 .sidebar {
-    background-color: #2c3e50;
+    background-color: #2c3e50; /* Couleur sombre pour le menu */
     color: white;
     padding: 20px;
     width: 250px;
     height: 100vh;
     position: fixed;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar h2 {
     color: white;
     text-align: center;
     margin-bottom: 30px;
+    font-size: 1.5rem; /* Réduction de la taille pour éviter le texte trop grand */
 }
 
 .sidebar nav ul {
@@ -45,71 +49,36 @@ body {
 
 /* Contenu principal */
 .main-content {
-    margin-left: 270px; /* Espace pour le menu latéral */
+    margin-left: 270px; /* Ajuste pour laisser de l'espace au menu */
     padding: 40px;
     flex: 1;
 }
 
 /* Style pour l'introduction */
 .intro-section h1 {
-    font-size: 2.5rem;
-    color: #004080;
-    margin-bottom: 30px;
-    text-align: center; /* Centrer le titre */
-}
-
-/* Disposition de l'image et du texte */
-.content-layout {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Centrer horizontalement le contenu */
-    margin-top: 30px;
-    gap: 50px; /* Espacement entre l'image et le texte */
-}
-
-/* Style pour la photo de profil */
-.profile-photo img {
-    width: 300px;       /* Ajuste la taille de l'image */
-    height: 400px;      /* Taille plus haute pour un effet ovale plus marqué */
-    border-radius: 50%; /* Forme ovale */
-    object-fit: cover;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Informations sur le profil */
-.profile-info {
-    max-width: 500px;
-}
-
-.profile-info h3 {
-    font-size: 1.8rem;
-    color: #004080;
+    font-size: 2rem;
+    color: #2c3e50; /* Titre avec un peu plus de contraste */
     margin-bottom: 20px;
+    text-align: left;
 }
 
-.profile-info p {
-    font-size: 1.2rem;
-    line-height: 1.6;
+.intro-section p,
+.intro-section ul {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
 }
 
-a {
-    color: #3498db;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
+.intro-section h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #004080;
 }
 
 /* Adaptation mobile */
 @media (max-width: 768px) {
-    .content-layout {
-        flex-direction: column;
-        text-align: center;
-    }
-
     .main-content {
-        margin-left: 0; /* Supprime le décalage pour les petits écrans */
+        margin-left: 0;
         padding: 20px;
     }
 
