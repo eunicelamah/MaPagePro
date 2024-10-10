@@ -65,4 +65,13 @@ a:hover {
         flex-direction: column;
         text-align: center;
     }
+
+.profile-photo img {
+    width: 250px;       /* Largeur de l'image */
+    height: 350px;      /* Hauteur de l'image pour un effet ovale */
+    border-radius: 50%; /* Cela permet de créer l'effet arrondi */
+    object-fit: cover;  /* Garde l'image bien ajustée dans le conteneur */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour un meilleur effet visuel */
+}
+
 }
