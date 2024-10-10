@@ -59,13 +59,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Adaptation mobile */
-@media (max-width: 768px) {
-    .profile-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
+/* Style pour l'image de profil ovale */
 .profile-photo img {
     width: 250px;       /* Largeur de l'image */
     height: 350px;      /* Hauteur de l'image pour un effet ovale */
@@ -74,4 +68,10 @@ a:hover {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre pour un meilleur effet visuel */
 }
 
+/* Adaptation mobile */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+    }
 }
