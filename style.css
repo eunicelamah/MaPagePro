@@ -46,6 +46,15 @@ body {
     color: white;
 }
 
+/* Style pour le lien actif */
+.sidebar nav ul li a.active {
+    background-color: #1abc9c; /* Couleur de fond pour l'onglet actif */
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 5px;
+}
+
 /* Contenu principal */
 .main-content {
     margin-left: 270px;
